@@ -172,5 +172,18 @@
   border-bottom-width: 2px;
 }
 .markdown-css code {
+  background: #fafafa;
   font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+  font-size: .9em;
+  padding: .05em;
+}
+.markdown-css pre {
+  background: #fafafa;
+  overflow-x: auto;
+}
+.markdown-css pre code {
+  color: inherit;
+  display: block;
+  line-height: inherit;
+  padding: 16px;
 }

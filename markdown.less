@@ -199,6 +199,21 @@
 
   // Code
   code {
+    background: @bg-color;
     font-family: @mono-font-family;
+    font-size: .9em;
+    padding: .05em;
+  }
+
+  pre {
+    background: @bg-color;
+    overflow-x: auto;
+
+    code {
+      color: inherit;
+      display: block;
+      line-height: inherit;
+      padding: @unit-4;
+    }
   }
 }
