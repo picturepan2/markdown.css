@@ -4,7 +4,7 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.75;
-  padding: 48px 150px;
+  padding: 48px 20px;
 }
 .markdown-css h1,
 .markdown-css h2,
@@ -157,6 +157,7 @@
 .markdown-css table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin: 32px 0;
   text-align: left;
   width: 100%;
 }
@@ -179,6 +180,7 @@
 }
 .markdown-css pre {
   background: #fafafa;
+  margin: 32px 0;
   overflow-x: auto;
 }
 .markdown-css pre code {
@@ -186,4 +188,19 @@
   display: block;
   line-height: inherit;
   padding: 16px;
+}
+@media screen and (min-width: 600px) {
+  .markdown-css {
+    padding: 48px 40px;
+  }
+}
+@media screen and (min-width: 840px) {
+  .markdown-css {
+    padding: 48px 80px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .markdown-css {
+    padding: 48px 140px;
+  }
 }

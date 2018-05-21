@@ -178,6 +178,7 @@
   table {
     border-collapse: collapse;
     border-spacing: 0;
+    margin: @unit-8 0;
     text-align: left;
     width: 100%;
 
@@ -207,6 +208,7 @@
 
   pre {
     background: @bg-color;
+    margin: @unit-8 0;
     overflow-x: auto;
 
     code {
@@ -215,5 +217,18 @@
       line-height: inherit;
       padding: @unit-4;
     }
+  }
+
+  // Responsive
+  @media screen and (min-width: @size-sm) {
+    padding: @layout-padding-sm;
+  }
+
+  @media screen and (min-width: @size-md) {
+    padding: @layout-padding-md;
+  }
+
+  @media screen and (min-width: @size-lg) {
+    padding: @layout-padding-lg;
   }
 }

@@ -11,7 +11,8 @@
     body {
       background: #f8f8f8;
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
-      padding: 50px 100px;
+      margin: 0;
+      padding: 80px 0;
     }
     
     .docs-container {
@@ -24,27 +25,48 @@
       width: 100%;
     }
 
-    
+    .docs-brand {
+      padding: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .docs-brand a {
+      color: #c7c7c7;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .docs-brand a:focus,
+    .docs-brand a:hover {
+      color: #a1a1a1;
+    }
 
     .docs-footer {
-      color: #bababa;
+      color: #c7c7c7;
+      font-size: 14px;
       margin: 30px auto;
       text-align: center;
     }
 
     .docs-footer a {
-      color: #878787;
+      color: #a1a1a1;
     }
 
     .docs-footer a:focus,
     .docs-footer a:hover {
-      color: #545454;
+      color: #878787;
     }
 
   </style>
 </head>
 <body>
   <div class="docs-container">
+    <div class="docs-brand">
+      <a class="docs-logo" href="https://github.com/picturepan2/markdown.css" target="_blank">MARKDOWN.CSS</a>
+    </div>
+    
     <article class="post markdown-css">
       <div class="post-header">
         <h1>标题 H1</h1>
@@ -140,7 +162,7 @@
   </div>
 
   <footer class="docs-footer">
-    <p><a href="https://github.com/picturepan2" target="_blank">GitHub</a> | <a href="https://twitter.com/picturepan2" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a></p>
+    <p><a href="https://github.com/picturepan2/markdown.css" target="_blank">GitHub</a> | <a href="https://twitter.com/picturepan2" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a></p>
     <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
   </footer>
   <script>
