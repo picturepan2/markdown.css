@@ -171,3 +171,6 @@
 .markdown-css table th {
   border-bottom-width: 2px;
 }
+.markdown-css code {
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+}
