@@ -1,0 +1,31 @@
+{
+  "name": "markdown.css",
+  "version": "0.1.0",
+  "homepage": "http://picturepan2.github.io/markdown.css",
+  "author": "Yan Zhu <picturepan2@hotmail.com>",
+  "description": "Markdown.css",
+  "main": "dist/markdown.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/picturepan2/markdown.css.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "responsive",
+    "markdown",
+    "front-end",
+    "less"
+  ],
+  "bugs": {
+    "url": "https://github.com/picturepan2/markdown.css/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

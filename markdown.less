@@ -1,0 +1,199 @@
+/*! Markdown.css | MIT License | github.com/picturepan2/markdown.css */
+
+// Core variables and mixins
+@import 'src/variables.less';
+
+.markdown-css {
+  color: @font-color;
+  font-family: @font-family;
+  font-size: @font-size;
+  line-height: @line-height;
+  padding: @layout-padding;
+
+  // Headings
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: @font-color-dark;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: @unit-6;
+    margin-top: @unit-2;
+
+    & + hr {
+      margin-top: -@unit-2;
+    }
+  }
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-weight: 500;
+  }
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+  h3,
+  .h3 {
+    font-size: 28px;
+  }
+  h4,
+  .h4 {
+    font-size: 24px;
+  }
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+
+  // Paragraphs
+  p {
+    margin: 0 0 @unit-6;
+  }
+
+  // Semantic text elements
+  a {
+    color: @primary-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+
+  }
+
+  a,
+  ins,
+  u {
+    text-decoration-skip: ink edges;
+  }
+
+  del + del,
+  del + s,
+  ins + ins,
+  ins + u,
+  s + del,
+  s + s,
+  u + ins,
+  u + u {
+    margin-left: .125em;
+  }
+
+  // Divider
+  hr {
+    background: @grey-color;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: @unit-2 0 @unit-6;
+    overflow: hidden;
+    
+    .clearfix();
+  }
+
+  // Lists
+  ul,
+  ol {
+    margin: @unit-8 0 @unit-8 @unit-8;
+    padding: 0;
+
+    ul,
+    ol {
+      margin: @unit-4 0 @unit-4 @unit-8;
+    }
+
+    li {
+      margin-top: @unit-2;
+    }
+  }
+
+  ul {
+    list-style: disc inside;
+
+    ul {
+      list-style-type: circle;
+    }
+  }
+
+  ol {
+    list-style: decimal inside;
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
+
+  // Images
+  img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+
+    & + em {
+      display: inline-block;
+      color: @font-color-light;
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  // Blockquote
+  blockquote {
+    background: @bg-color;
+    margin: @unit-8 0;
+    padding: @unit-6;
+
+    &::before {
+      color: @grey-color;
+      content: open-quote;
+      font-family: arial;
+      font-size: 6em;
+      line-height: 0.1em;
+      vertical-align: -0.5em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Tables
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    width: 100%;
+
+    tbody {
+      tr:nth-of-type(odd) {
+        background: @bg-color;
+      }
+    }
+
+    td,
+    th {
+      border-bottom: 1px solid @grey-color;
+      padding: @unit-2 @unit-1;
+    }
+    th {
+      border-bottom-width: 2px;
+    }
+  }
+}
