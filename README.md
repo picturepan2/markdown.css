@@ -2,7 +2,9 @@
 An elegant stylesheet for rendered Markdown contents
 
 ## Getting started
-Markdown.css is a side project based on years of CSS development work on a large web service project. Markdown.css only includes CSS styles for headings, paragraphs, text elements, lists, images, blockquote, tables, and code. There are 2 ways to get started with Markdown.css. You can either manually install or use NPM.
+Markdown.css is a side project based on years of CSS development work on large web and app projects. Markdown.css only includes CSS styles for headings, paragraphs, text elements, lists, images, blockquote, tables, and code. 
+
+There are 2 ways to get started with Markdown.css. You can either manually install or use NPM.
 
 ### Install manually
 

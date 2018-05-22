@@ -4,7 +4,7 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.75;
-  padding: 48px 20px;
+  padding: 16px 20px;
 }
 .markdown-css h1,
 .markdown-css h2,
@@ -26,36 +26,22 @@
 .markdown-css h6 + hr {
   margin-top: -8px;
 }
-.markdown-css .h1,
-.markdown-css .h2,
-.markdown-css .h3,
-.markdown-css .h4,
-.markdown-css .h5,
-.markdown-css .h6 {
-  font-weight: 500;
-}
-.markdown-css h1,
-.markdown-css .h1 {
-  font-size: 36px;
-}
-.markdown-css h2,
-.markdown-css .h2 {
-  font-size: 32px;
-}
-.markdown-css h3,
-.markdown-css .h3 {
+.markdown-css h1 {
   font-size: 28px;
 }
-.markdown-css h4,
-.markdown-css .h4 {
+.markdown-css h2 {
   font-size: 24px;
 }
-.markdown-css h5,
-.markdown-css .h5 {
+.markdown-css h3 {
+  font-size: 22px;
+}
+.markdown-css h4 {
   font-size: 20px;
 }
-.markdown-css h6,
-.markdown-css .h6 {
+.markdown-css h5 {
+  font-size: 18px;
+}
+.markdown-css h6 {
   font-size: 16px;
 }
 .markdown-css p {
@@ -191,16 +177,34 @@
 }
 @media screen and (min-width: 600px) {
   .markdown-css {
-    padding: 48px 40px;
+    padding: 24px 40px;
   }
 }
 @media screen and (min-width: 840px) {
   .markdown-css {
-    padding: 48px 80px;
+    padding: 32px 80px;
+  }
+  .markdown-css h1 {
+    font-size: 36px;
+  }
+  .markdown-css h2 {
+    font-size: 32px;
+  }
+  .markdown-css h3 {
+    font-size: 28px;
+  }
+  .markdown-css h4 {
+    font-size: 24px;
+  }
+  .markdown-css h5 {
+    font-size: 20px;
+  }
+  .markdown-css h6 {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 960px) {
   .markdown-css {
-    padding: 48px 140px;
+    padding: 40px 140px;
   }
 }

@@ -8,7 +8,8 @@
   font-family: @font-family;
   font-size: @font-size;
   line-height: @line-height;
-  padding: @layout-padding;
+  padding: @unit-4 @layout-padding-xs;
+
 
   // Headings
   h1,
@@ -27,36 +28,22 @@
       margin-top: -@unit-2;
     }
   }
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
-    font-weight: 500;
-  }
-  h1,
-  .h1 {
-    font-size: 36px;
-  }
-  h2,
-  .h2 {
-    font-size: 32px;
-  }
-  h3,
-  .h3 {
+  h1 {
     font-size: 28px;
   }
-  h4,
-  .h4 {
+  h2 {
     font-size: 24px;
   }
-  h5,
-  .h5 {
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
     font-size: 20px;
   }
-  h6,
-  .h6 {
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
     font-size: 16px;
   }
 
@@ -221,14 +208,33 @@
 
   // Responsive
   @media screen and (min-width: @size-sm) {
-    padding: @layout-padding-sm;
+    padding: @unit-6 @layout-padding-sm;
   }
 
   @media screen and (min-width: @size-md) {
-    padding: @layout-padding-md;
+    padding: @unit-8 @layout-padding-md;
+
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 16px;
+    }
   }
 
   @media screen and (min-width: @size-lg) {
-    padding: @layout-padding-lg;
+    padding: @unit-10 @layout-padding-lg;
   }
 }
