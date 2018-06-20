@@ -60,6 +60,61 @@
       color: #878787;
     }
 
+    .docs-ad {
+      background: #f8f9fa;
+      border-radius: .1rem;
+      display: block;
+      margin: 2rem 0;
+      padding: .4rem;
+      position: relative;
+    }
+
+    .docs-ad ins {
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    .docs-ad .carbon-wrap .carbon-img {
+      display: block;
+    }
+
+    .docs-ad .carbon-wrap .carbon-text {
+      color: #727e96;
+      display: block;
+      font-size: .7rem;
+    }
+
+    .docs-ad .carbon-poweredby {
+      color: #acb3c2;
+      font-size: .6rem;
+    }
+
+    @media (min-width: 1366px) {
+      .docs-ad.docs-ad-sidebar {
+        bottom: 1rem;
+        margin: 0;
+        position: fixed;
+        right: 1rem;
+        width: 7.3rem;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .markdown-css {
+        padding: 24px 40px;
+      }
+    }
+    @media screen and (min-width: 840px) {
+      .markdown-css {
+        padding: 32px 80px;
+      }
+    }
+    @media screen and (min-width: 960px) {
+      .markdown-css {
+        padding: 40px 140px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -71,14 +126,6 @@
     <article class="post markdown-css">
       <div class="post-header">
         <h1>标题 H1</h1>
-        <div class="post-meta">
-          <a href="#" class="post-author">
-            <img class="post-avatar" src="https://picturepan2.github.io/spectre/img/avatar-4.png" alt="作者">
-            作者
-          </a>
-          <span class="post-dot">·</span>
-          <time class="post-date" datetime="2018-05-22T19:00">2018-05-22</time>
-        </div>
       </div>
       <div class="post-body">
         <p><strong>山不在高</strong>，有仙則名；<a href="#">水不在深</a>，有龍則靈。<u>斯是</u><u>陋室</u>，惟吾德馨。<em>苔痕上階綠</em>，草色入簾青；談笑有鴻儒，往來無白丁。<s>可以調素琴</s>，閱金經。無絲竹之亂耳，無案牘之勞形。南陽諸葛廬，西蜀子雲亭。孔子云：「何陋之有？」</p>
@@ -167,16 +214,24 @@
     </article>
   </div>
 
+  <div class="section section-ads">
+    <div class="docs-ad docs-ad-sidebar text-center">
+      <script id="_carbonads_js" async="" type="text/javascript" src="https://cdn.carbonads.com/carbon.js?serve=CK7DTKQW&amp;placement=picturepan2githubio"></script>
+    </div>
+  </div>
+
   <footer class="docs-footer">
     <p><a href="https://github.com/picturepan2/markdown.css" target="_blank">GitHub</a> | <a href="https://twitter.com/picturepan2" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a></p>
     <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
   </footer>
+
+  <!-- Google Analytics tracking code -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+    
     ga('create', 'UA-2702768-8', 'auto');
     ga('send', 'pageview');
   </script>

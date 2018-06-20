@@ -175,18 +175,3 @@
   line-height: inherit;
   padding: 16px;
 }
-@media screen and (min-width: 600px) {
-  .markdown-css {
-    padding: 24px 40px;
-  }
-}
-@media screen and (min-width: 840px) {
-  .markdown-css {
-    padding: 32px 80px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .markdown-css {
-    padding: 40px 140px;
-  }
-}
