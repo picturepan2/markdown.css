@@ -12,7 +12,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', function() {
-  gulp.src(['markdown.less"','src/post.less'])
+  gulp.src('markdown.less')
     .pipe(less({
       plugins: [autoprefix]
     }))
